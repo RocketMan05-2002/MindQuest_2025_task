@@ -1,0 +1,110 @@
+[
+    {
+      "id": 1,
+      "name": "Italian",
+      "description": "Known for pasta, pizza, and rich tomato-based sauces.",
+      "imageUrl": "https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/2025-02/BeFunky-collage.1%20%2812%29.jpg",
+      "globalRating": 4.8,
+      "popularityIndex": 95,
+      "numberOfDishes": 120
+    },
+    {
+      "id": 2,
+      "name": "Japanese",
+      "description": "Features sushi, ramen, and fresh seafood with delicate flavors.",
+      "imageUrl": "https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/content6485.jpg",
+      "globalRating": 4.7,
+      "popularityIndex": 90,
+      "numberOfDishes": 85
+    },
+    {
+      "id": 3,
+      "name": "Indian",
+      "description": "Famous for spicy curries, biryani, and diverse vegetarian options.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN-f1Zm40MrI-DkFKkQzVA2biezxGr2gxdjA&s",
+      "globalRating": 4.9,
+      "popularityIndex": 98,
+      "numberOfDishes": 150
+    },
+    {
+      "id": 4,
+      "name": "Mexican",
+      "description": "Known for tacos, burritos, and bold flavors using beans, corn, and chilies.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/Mexican_fast_street_food.jpg",
+      "globalRating": 4.6,
+      "popularityIndex": 85,
+      "numberOfDishes": 95
+    },
+    {
+      "id": 5,
+      "name": "Chinese",
+      "description": "Diverse dishes like dim sum, stir-fry, and Peking duck.",
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/650ad61d5236af8635f181f582e5094d/fb86662148be855d931b37d6c1e5fcbe.jpeg",
+      "globalRating": 4.8,
+      "popularityIndex": 92,
+      "numberOfDishes": 130
+    },
+    {
+      "id": 6,
+      "name": "French",
+      "description": "Famous for pastries, cheese, and refined dishes like coq au vin.",
+      "imageUrl": "https://www.holidify.com/images/cmsuploads/compressed/food-cuisine-dish-delicacy-street-food-patisserie-1509617-pxhere.com_20240103121402.jpg",
+      "globalRating": 4.7,
+      "popularityIndex": 88,
+      "numberOfDishes": 110
+    },
+    {
+      "id": 7,
+      "name": "Thai",
+      "description": "A balance of sweet, sour, spicy, and salty flavors in dishes like Pad Thai.",
+      "imageUrl": "https://www.traveltomtom.net/images/nieuwe_indeling/artikels/thailand/street_food_thailand/thai-street-food.jpeg",
+      "globalRating": 4.6,
+      "popularityIndex": 83,
+      "numberOfDishes": 90
+    },
+    {
+      "id": 8,
+      "name": "Greek",
+      "description": "Known for gyros, moussaka, and fresh ingredients like olive oil and feta.",
+      "imageUrl": "https://www.holidify.com/images/cmsuploads/compressed/gyros-6744251280_20240108120825.jpg",
+      "globalRating": 4.5,
+      "popularityIndex": 78,
+      "numberOfDishes": 60
+    },
+    {
+      "id": 9,
+      "name": "Spanish",
+      "description": "Famous for paella, tapas, and a mix of Mediterranean flavors.",
+      "imageUrl": "https://img.veenaworld.com/wp-content/uploads/2022/07/mika-CeCQP3ouZuw-unsplash-scaled.jpg",
+      "globalRating": 4.6,
+      "popularityIndex": 80,
+      "numberOfDishes": 70
+    },
+    {
+      "id": 10,
+      "name": "Turkish",
+      "description": "Rich dishes like kebabs, baklava, and mezze platters.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkx1A_cVduKI6OGd7MyskPXirMu0MnNWn1KQ&s",
+      "globalRating": 4.5,
+      "popularityIndex": 76,
+      "numberOfDishes": 65
+    },
+    {
+      "id": 11,
+      "name": "Brazilian",
+      "description": "Known for feijoada, churrasco barbecue, and tropical flavors.",
+      "imageUrl": "https://cdn.prod.website-files.com/56e9debf633486e330198479/57f1f4b180f54a0b096d45f2_5-street-foods-you-have-to-try-in-sao-paulo-brazil-header.jpg",
+      "globalRating": 4.4,
+      "popularityIndex": 72,
+      "numberOfDishes": 50
+    },
+    {
+      "id": 12,
+      "name": "German",
+      "description": "Famous for sausages, schnitzels, and hearty meals with beer.",
+      "imageUrl": "https://kummuni.com/storage/2024/10/selling-german-pretzels-in-a-street-market-2024-10-14-16-56-16-utc24-1067x600.webp",
+      "globalRating": 4.3,
+      "popularityIndex": 68,
+      "numberOfDishes": 55
+    }
+  ]

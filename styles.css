@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --font-family: 'Manrope', sans-serif;
+
+  --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+  
+  --color-bg: #040C18;
+  --color-footer : #031B34;
+  --color-blog: #042c54;
+  --color-text: #81AFDD;
+  --color-subtext: #FF8A71;
+}
+span{
+    color: #6a9dcf;
+}
+a{
+    text-decoration: none;
+}
+.gradient__bg {
+    background: radial-gradient(
+      circle at 3% 25%,
+      rgba(0, 40, 83, 1) 0%,
+      rgba(4, 12, 24, 1) 100%
+    );
+    /* Used angry tools */
+  }
+  .gradient__text {
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+}
+.navbar__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar__logo img{
+    height: 70px;
+    width: auto;
+}
+.navbar__links--order{
+    list-style-type: none;
+    display: flex;
+    gap: 4rem;
+}
+.navbar__links--link{
+    text-decoration: none;
+    font-size: larger;
+    color: #81AFDD;
+}
+.navbar__signin button{
+    padding: 10px 15px;
+}
+.navbar__signin>button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: #585858;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .navbar__signin>button:hover {
+    background-color: #ffffff;
+    color: black;
+  }
+  
+  .navbar__signin button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-size:medium;
+  }
+  .navbar__signin button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .navbar__signin button:hover span {
+    padding-right: 25px;
+  }
+  
+  .navbar__signin button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .main{
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    padding-top: 60px ;
+    gap: 30px;
+  }
+  .main img{
+    height: 450px;
+    aspect-ratio: 1/1;
+  }
+  .main__content{
+    color:antiquewhite;
+    font-size: larger;
+    line-height: 2.5rem;
+    width: 40%;
+  }
+  .main__image{
+    width: 40%;
+  }

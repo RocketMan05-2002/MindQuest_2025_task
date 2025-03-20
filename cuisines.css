@@ -1,0 +1,216 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0 10px;
+    background: #f4f7fc;
+  }
+  :root {
+    --primary: #4a90e2;
+    --primary-dark: #357ABD;
+    --text-dark: #333;
+    --bg-light: #ffffff;
+    --btn: #4a90e2;
+    --btn-hover: #357ABD;
+    --item-bg: #e8f0fe;
+    --item-hover: #d0e1ff;
+    --modal-bg: rgba(0, 0, 0, 0.5);
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .header>button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: #173d64;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .header>button:hover {
+    background-color: #ffffff;
+    color: black;
+  }
+  
+  .header button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  .header button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .header button:hover span {
+    padding-right: 25px;
+  }
+  
+  .header button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .employees {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .employees>div {
+    border-radius: 10px;
+    background-color: var(--bg-light);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    height: 500px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .employees>div:hover {
+    transform: scale(1.02);
+  }
+  .employees__names {
+    width: 30%;
+  }
+  
+  .employees__single {
+    width: 70%;
+  }
+  
+  .employees__names,
+  .employees__single {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .employees__names--title,
+  .employees__single--title {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid var(--primary);
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .employees__names--list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .employee__names--item {
+    cursor: pointer;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    text-align: center;
+    background-color: var(--item-bg);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .employee__names--item:hover {
+    background-color: var(--primary-dark);
+    transform: scale(1.05);
+  }
+  
+  .selected {
+    background-color: var(--primary-dark);
+    color: white;
+    font-weight: bold;
+    transform: scale(1.02);
+  }
+  .employees__single--heading {
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 10px;
+  }
+  
+  .employees__single--info>img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .employees__single--info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .addEmployee {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--modal-bg);
+  }
+  
+  .addEmployee_create {
+    width: 400px;
+    background-color: var(--bg-light);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .addEmployee_create>div {
+    display: grid;
+    grid-template-columns: 48.1% 48.1%;
+    column-gap: 15px;
+  }
+  
+  .addEmployee_create input {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid rgb(200, 200, 200);
+  }
+  
+  .addEmployee_create--submit {
+    background-color: var(--btn);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .addEmployee_create--submit:hover {
+    background-color: var(--btn-hover);
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
