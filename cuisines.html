@@ -1,43 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cuisines</title>
     <link rel="stylesheet" href="./cuisines.css" />
-</head>
-<body>
+  </head>
+  <body>
     <div id="app">
-        <header class="header">
-          <h1>Cuisines</h1>
-          <button class="createEmployee"><span>Add Cuisine</span></button>
-        </header>
+      <header class="header">
+        <h1>Cuisines</h1>
+        <button class="createEmployee"><span>Add Cuisine</span></button>
+      </header>
+    </div>
+
+    <div class="employees">
+      <div class="employees__names">
+        <span class="employees__names--title">Cuisines List</span>
+        <div class="employees__names--list"></div>
       </div>
-  
-      <div class="employees">
-        <div class="employees__names">
-          <span class="employees__names--title">Cuisines List</span>
-          <div class="employees__names--list"></div>
+      <div class="employees__single">
+        <span class="employees__single--title">Cuisine Information</span>
+        <div class="employees__single--info"></div>
+      </div>
+    </div>
+
+    <div class="addEmployee">
+      <form class="addEmployee_create">
+        Add a new Cusine
+        <div>
+          <input type="text" name="Name" placeholder="Name" required />
+          <input
+            type="text"
+            name="country"
+            placeholder="Country Name"
+            required
+          />
         </div>
-        <div class="employees__single">
-          <span class="employees__single--title">Cuisine Information</span>
-          <div class="employees__single--info"></div>
-        </div>
-      </div>
-  
-      <div class="addEmployee">
-        <form class="addEmployee_create">
-          Add a new Cusine
-          <div>
-            <input type="text" name="Name" placeholder="Name" required />
-            <input type="text" name="country" placeholder="Country Name" required />
-          </div>
-          <input type="text" name="imageUrl" placeholder="Image URL (Optional)" />
-          <input type="text" name="location" placeholder="Popular Localities" required />
-          <input type="date" name="dob" placeholder="Date of Origin" class="addEmployee_create--dob" required />
-          <input type="submit" class="addEmployee_create--submit" value="submit" />
-        </form>
-      </div>
-      <script src="cuisines.js"></script>
-</body>
+        <input type="text" name="imageUrl" placeholder="Image URL (Optional)" />
+        <input
+          type="text"
+          name="location"
+          placeholder="Popular Localities"
+          required
+        />
+        <input
+          type="date"
+          name="dob"
+          placeholder="Date of Origin"
+          class="addEmployee_create--dob"
+          required
+        />
+        <input
+          type="submit"
+          class="addEmployee_create--submit"
+          value="submit"
+        />
+      </form>
+    </div>
+    <script src="cuisines.js"></script>
+  </body>
 </html>
